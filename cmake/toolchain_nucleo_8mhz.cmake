@@ -1,0 +1,9 @@
+set(UNI_HAL_HSE_VALUE 8000000)
+set(UNI_HAL_TARGET_MCU "STM32L496")
+set(UNI_HAL_RTOS_HEAP_APP 1)
+set(UNI_HAL_RTOS_HEAP_SIZE 64*1024)
+
+
+add_compile_definitions(TARGET_DEVICE_NUCLEO)
+
+include("${CMAKE_CURRENT_LIST_DIR}/toolchain.cmake")
